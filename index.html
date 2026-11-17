@@ -1,24 +1,441 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<title>Guide des IA Professionnelles</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide des IA Professionnelles</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #005a9c, #0078d4);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 2.7em;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #005a9c;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #005a9c;
+            margin-bottom: 20px;
+            border-left: 5px solid #0078d4;
+            padding-left: 10px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            overflow-x: auto;
+        }
+
+        th {
+            background: #0078d4;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background: #f1f7ff;
+        }
+
+        .podium {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 20px;
+        }
+
+        .metier {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .gold {
+            color: #d4a000;
+        }
+
+        .silver {
+            color: #888;
+        }
+
+        .bronze {
+            color: #b87333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #005a9c;
+            color: white;
+        }
+
+        @media(max-width:768px) {
+            table {
+                display:block;
+                overflow-x:auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>🧠 Guide des IA Professionnelles</h1>
+<header>
+    <h1>🧠 Guide des IA Professionnelles</h1>
+    <p>Comprendre les IA et choisir les bons outils selon son métier</p>
+    <p><strong>Muriel NIVON - CCI du Gard</strong></p>
+</header>
 
-<p>Bienvenue sur le futur guide des IA de Muriel NIVON.</p>
+<nav>
+    <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#dictionnaire">Dictionnaire IA</a></li>
+        <li><a href="#comparatif">Comparatif</a></li>
+        <li><a href="#differences">Comprendre</a></li>
+        <li><a href="#metiers">Métiers</a></li>
+        <li><a href="#casusage">Cas d'usage</a></li>
+    </ul>
+</nav>
 
-<h2>Glossaire</h2>
+<div class="container">
 
+<section id="accueil">
+    <h2>Bienvenue</h2>
+
+    <div class="card">
+        <p>
+            Ce guide a pour objectif d'aider les dirigeants, commerçants,
+            artisans, hébergeurs, prestataires touristiques et conseillers
+            à comprendre les principales intelligences artificielles du marché.
+        </p>
+    </div>
+</section>
+
+<section id="dictionnaire">
+
+    <h2>📖 Dictionnaire IA</h2>
+
+    <table>
+        <tr>
+            <th>Terme</th>
+            <th>Définition simple</th>
+            <th>Exemple concret</th>
+        </tr>
+
+        <tr>
+            <td>Modèle</td>
+            <td>Le cerveau de l'IA</td>
+            <td>GPT-5, Claude Sonnet, Gemini</td>
+        </tr>
+
+        <tr>
+            <td>Prompt</td>
+            <td>Instruction donnée à l'IA</td>
+            <td>"Prépare un atelier IA"</td>
+        </tr>
+
+        <tr>
+            <td>Mémoire</td>
+            <td>Ce que l'IA retient sur l'utilisateur</td>
+            <td>Muriel est conseillère numérique</td>
+        </tr>
+
+        <tr>
+            <td>Assistant</td>
+            <td>IA spécialisée sur un sujet</td>
+            <td>Assistant Formateur CCI</td>
+        </tr>
+
+        <tr>
+            <td>Agent</td>
+            <td>IA capable d'agir</td>
+            <td>Organiser un atelier automatiquement</td>
+        </tr>
+
+        <tr>
+            <td>Connaissances</td>
+            <td>Documents utilisés comme référence</td>
+            <td>PPT, procédures, FAQ</td>
+        </tr>
+
+        <tr>
+            <td>Skill</td>
+            <td>Compétence spécialisée</td>
+            <td>Créer une présentation PowerPoint</td>
+        </tr>
+
+        <tr>
+            <td>MCP</td>
+            <td>Connecteur universel entre IA et outils</td>
+            <td>Connexion Notion, Trello, CRM</td>
+        </tr>
+
+        <tr>
+            <td>Artefact</td>
+            <td>Contenu créé dans un espace de travail</td>
+            <td>Site web, FAQ, tableau, document</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section id="comparatif">
+
+<h2>🤖 Comparatif des IA</h2>
+
+<table>
+
+<tr>
+<th>Fonction</th>
+<th>Copilot</th>
+<th>ChatGPT</th>
+<th>Claude</th>
+<th>Gemini</th>
+<th>Mistral</th>
+<th>Perplexity</th>
+</tr>
+
+<tr>
+<td>Microsoft 365</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>⭐</td>
+<td>⭐</td>
+<td>⭐</td>
+<td>⭐</td>
+<td>⭐</td>
+</tr>
+
+<tr>
+<td>Mémoire</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>⭐⭐⭐</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐</td>
+<td>⭐⭐</td>
+</tr>
+
+<tr>
+<td>Recherche Web</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+
+<tr>
+<td>Analyse documentaire</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐</td>
+<td>⭐⭐⭐</td>
+</tr>
+
+<tr>
+<td>Créativité</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐</td>
+<td>⭐⭐⭐</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="differences">
+
+<h2>🎯 Comprendre Prompt, Mémoire, Assistant et Agent</h2>
+
+<table>
+
+<tr>
+<th>Élément</th>
+<th>Rôle</th>
+<th>Exemple</th>
+</tr>
+
+<tr>
+<td>Prompt</td>
+<td>Demande du moment</td>
+<td>Prépare un atelier GEO</td>
+</tr>
+
+<tr>
+<td>Mémoire</td>
+<td>Informations retenues sur toi</td>
+<td>Muriel forme des TPE-PME</td>
+</tr>
+
+<tr>
+<td>Assistant</td>
+<td>IA personnalisée</td>
+<td>Muriel-Protocole-CCI Gard</td>
+</tr>
+
+<tr>
+<td>Agent</td>
+<td>IA qui agit</td>
+<td>Préparer les emails et les supports</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="metiers">
+
+<h2>🏆 Les IA recommandées par métier</h2>
+
+<div class="podium">
+
+<div class="metier">
+<h3>Conseiller CCI</h3>
+<p class="gold">🥇 Copilot</p>
+<p class="silver">🥈 ChatGPT</p>
+<p class="bronze">🥉 Claude</p>
+</div>
+
+<div class="metier">
+<h3>Hébergeur touristique</h3>
+<p class="gold">🥇 ChatGPT</p>
+<p class="silver">🥈 Gemini</p>
+<p class="bronze">🥉 Perplexity</p>
+</div>
+
+<div class="metier">
+<h3>Prestataire de loisirs</h3>
+<p class="gold">🥇 ChatGPT</p>
+<p class="silver">🥈 Gemini</p>
+<p class="bronze">🥉 Canva AI</p>
+</div>
+
+<div class="metier">
+<h3>Commerce</h3>
+<p class="gold">🥇 ChatGPT</p>
+<p class="silver">🥈 Gemini</p>
+<p class="bronze">🥉 Canva AI</p>
+</div>
+
+<div class="metier">
+<h3>Artisan</h3>
+<p class="gold">🥇 ChatGPT</p>
+<p class="silver">🥈 Gemini</p>
+<p class="bronze">🥉 Perplexity</p>
+</div>
+
+<div class="metier">
+<h3>Profession libérale</h3>
+<p class="gold">🥇 Claude</p>
+<p class="silver">🥈 ChatGPT</p>
+<p class="bronze">🥉 Copilot</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="casusage">
+
+<h2>🚀 Cas d'usage rapides</h2>
+
+<div class="card">
 <ul>
-<li>Prompt = instruction donnée à l'IA</li>
-<li>Mémoire = ce que l'IA retient sur vous</li>
-<li>Assistant = IA spécialisée</li>
-<li>Agent = IA qui agit pour vous</li>
+<li>Rédiger un email professionnel</li>
+<li>Créer une présentation PowerPoint</li>
+<li>Préparer une conférence</li>
+<li>Répondre aux avis Google</li>
+<li>Créer une FAQ</li>
+<li>Rédiger un plan marketing</li>
+<li>Créer une publication Facebook</li>
+<li>Préparer une formation</li>
+<li>Faire une veille concurrentielle</li>
+<li>Analyser un contrat ou un rapport</li>
 </ul>
+</div>
+
+</section>
+
+</div>
+
+<footer>
+    Guide des IA Professionnelles © 2026 - Muriel NIVON
+</footer>
 
 </body>
 </html>
